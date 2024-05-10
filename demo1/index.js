@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer-core');
 const path = require('path');
 
 
-const chromePath = path.resolve('C:/Program Files (x86)/Google/Chrome/Application/chrome.exe')
+const chromePath = path.resolve('C:/Users/fy/AppData/Local/Google/Chrome/Application/chrome.exe')
 
 async function main(){
   const startTime = Date.now()
@@ -127,7 +127,7 @@ const cookies =  [
 
   const inputLabel = '#galleryPage > div.Modal__backdrop.undefined.backdrop.Modal__noafter.display > div > div.Modal__children > div > div > div.Step__content.Step__current > div > div:nth-child(2) > div > div > label'
 
-  const imgs = 'C:/Users/53281/Videos/empbind.png'
+  const imgs = 'C:/Users/fy/Pictures/th.png'
   await page.waitForSelector(inputLabel);
   const [fileChooser] = await Promise.all([
     page.waitForFileChooser(),
